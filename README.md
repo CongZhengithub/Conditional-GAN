@@ -68,8 +68,6 @@ You could use celebmask.py to handle the dataset.
 
 ## result
 
-![traditional conditional GANs](https://github.com/zhengcong1/Conditional-GAN-cDCGAN-acGANs-pix2pix-GuaGAN-/blob/master/result/2_20.png?raw=true)
-![acGANs](https://github.com/zhengcong1/Conditional-GAN-cDCGAN-acGANs-pix2pix-GuaGAN-/blob/master/result/MNIST_ACGAN_30.png?raw=true)
 <table align='center'>
 <tr align='center'>
 <td> </td>
