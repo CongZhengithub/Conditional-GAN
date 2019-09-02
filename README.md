@@ -21,7 +21,6 @@
    
    
    
-
 ## Train
 nohup python -u tensorflow_MNIST_cDCGAN_1.py > out_cdcgans.log 2>&1 &
 
@@ -34,6 +33,65 @@ python main.py --dataset CelebAMask-HQ --segmap_ch 3 --phase random
 
 ## Guide test for guagan
 python main.py --dataset CelebAMask-HQ --img_ch 3 --segmap_ch 3 --phase guide --guide_img 0.jpg
+
+
+## Usage
+```
+├── dataset
+  └── YOUR_DATASET_NAME
+    ├── images
+      ├── training
+        ├── 000001.jpg
+        ├── 000002.png
+        └── ...
+      ├── validation
+        ├── 000001.jpg
+        ├── 000002.png
+        └── ...
+    ├── annotations
+      ├── training
+        ├── 000001.jpg
+        ├── 000002.png
+        └── ...
+      ├── validation
+        ├── 000001.jpg
+        ├── 000002.png
+        └── ...
+0.jpg (example for guided image translation task)
+
+```
+
+**CelebAMask-HQ**
+* Download from [here](https://github.com/switchablenorms/CelebAMask-HQ)
+You could use celebmask.py to handle the dataset.
+
+
+## result
+
+![traditional conditional GANs](https://github.com/zhengcong1/Conditional-GAN-cDCGAN-acGANs-pix2pix-GuaGAN-/blob/master/result/2_20.png?raw=true)
+![acGANs](https://github.com/zhengcong1/Conditional-GAN-cDCGAN-acGANs-pix2pix-GuaGAN-/blob/master/result/MNIST_ACGAN_30.png?raw=true)
+<table align='center'>
+<tr align='center'>
+<td> </td>
+<td> traditional conditional GANs </td>
+<td> acGANs </td>
+</tr>
+<tr align='center'>
+<td></td>
+<td><img src = 'result/2_20.png' height = '300px'>
+<td><img src = 'result/MNIST_ACGAN_30.png' height = '300px'>
+</tr>
+</table>
+<tr align='center'>
+<td></td>
+    guided image generation
+<td><img src = 'result/women_guide_hinge.png' height = '300px'>
+    random image generation
+<td><img src = 'result/women_random_hinge.png' height = '300px'>
+</tr>
+
+
+
 
 
 
