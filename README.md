@@ -92,10 +92,12 @@ You could use celebmask.py to handle the dataset.
 </table>
 <tr align='center'>
 <td></td>
-    guided image generation(guagan)
+guided image generation
 <td><img src = 'result/women_guide_hinge.png' height = '300px'>
-    random image generation(guagan)
+random image generation(guagan)
 <td><img src = 'result/women_random_hinge.png' height = '300px'>
+colorization by pix2pix
+<td><img src = 'result/pix2pix.png' height = '300px'>
 </tr>
 
 
