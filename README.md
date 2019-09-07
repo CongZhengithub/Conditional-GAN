@@ -29,10 +29,10 @@ nohup python -u acgan.py > out_acgan.log 2>&1 &
 nohup python -u main.py --dataset CelebAMask-HQ  --img_ch 3 --segmap_ch 3 --gpu '1' --phase train > out_1.log 2>&1 &
 
 nohup python -u pix2pix.py --mode train --output_dir /data/output/checkpoints/origin3_2/   --max_epochs 1000 --separable_conv --batch_size 1 --l1_weight 100 --input_dir /data/data/233/cart7_combined/ --which_direction AtoB > out.log 2>&1 & (most parameters could be set on demand)
-## random_test for guagan
+## random_test for gaugan
 python main.py --dataset CelebAMask-HQ --segmap_ch 3 --phase random
 
-## Guide test for guagan
+## Guide test for gaugan
 python main.py --dataset CelebAMask-HQ --img_ch 3 --segmap_ch 3 --phase guide --guide_img 0.jpg
 
 ## test command for pix2pix
