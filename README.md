@@ -1,4 +1,4 @@
-# Conditional-GAN-cDCGAN-acGANs-pix2pix-GuaGAN
+# Conditional-GAN-cDCGAN-acGANs-pix2pix-GauGAN
 
 
 ## Three different methods to direct the image generation process
