@@ -100,8 +100,8 @@ colorization by pix2pix
 <td><img src = 'result/pix2pix.png' height = '300px'>
 </tr>
 
-
-
+Reference：
+https://github.com/taki0112/SPADE-Tensorflow
 
 
 
